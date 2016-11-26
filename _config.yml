@@ -1,8 +1,8 @@
-name: Alpha
-description: Alphs template for Jekyll
-baseurl: '/Alpha-Jekyll-Theme'
+name: Minimum Couette
+description: Montreal workshop for outdoor gear
+baseurl: '/minimum_couette'
 
-url: "http://localhost:4000"
 
 paginate: 10
 
+gems: [jekyll-paginate]
