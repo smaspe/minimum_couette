@@ -4,13 +4,13 @@ layout: default
 <section class="box special">
 	<header class="major">
 		<h2>{{ site.description }}</h2>
-		<p>Minimum Couette provides you with ultra light hiking gear so you can go even further!<br />
+		<p>Minimum Couette provides ultra light hiking gear so you can go even further!<br />
 		Carry less. Hike more!</p>
 	</header>
 	<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic01.jpg" alt="" /></span>
 </section>
 
-<section class="box special features">
+<section class="box special features" style="display:none">
 	<div class="features-row">
 		<section>
 			<span class="icon major fa-bolt accent2"></span>
@@ -37,29 +37,22 @@ layout: default
 	</div>
 </section>
 
-<div class="row">
-	<div class="6u">
-
-		<section class="box special">
-			<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic02.jpg" alt="" /></span>
-			<h3>Sed lorem adipiscing</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-			<ul class="actions">
-				<li><a href="#" class="button alt">Learn More</a></li>
-			</ul>
-		</section>
-
-	</div>
-	<div class="6u">
-
-		<section class="box special">
-			<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic03.jpg" alt="" /></span>
-			<h3>Accumsan integer</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-			<ul class="actions">
-				<li><a href="#" class="button alt">Learn More</a></li>
-			</ul>
-		</section>
-
-	</div>
-</div>
+{% for product in site.products %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  {% if loopindex == 1 %}
+		<div class="row">
+	{% endif %}
+		<div class="6u">
+			<section class="box special">
+				<span class="image featured"><img src="{{ site.baseurl }}/assets/images/{{ product.image }}" alt="" /></span>
+				<h3><a href="{{ site.baseurl }}{{ product.url }}">{{ product.title }}</a></h3>
+				{{ post.excerpt }}
+				<ul class="actions">
+					<li><a href="{{ site.baseurl }}{{ product.url }}" class="button alt">Learn More</a></li>
+				</ul>
+			</section>
+		</div>
+	{% if loopindex != 1 %}
+    </div>
+  {% endif %}
+{% endfor %}

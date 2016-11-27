@@ -2,7 +2,11 @@ name: Minimum Couette
 description: Montreal Workshop for Outdoor Gear
 baseurl: '/minimum_couette'
 
+collections:
+  products:
+    output: true
 
 paginate: 10
 
 gems: [jekyll-paginate]
+# TODO actually use paginate before I get to 10 articles
