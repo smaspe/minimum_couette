@@ -10,4 +10,4 @@ This quilt has a zippered footbox. You can spread it flat like a blanket for mor
 
 Like the [closed model]({% site.url %}/products/closed.html), it can attach to your sleeping pad using the same straps and clips.
 
-The head cinches to keep the warmth inside using clips.
+The head cinches to keep the warmth inside.
