@@ -1,7 +1,13 @@
 ---
-title: Messenger Bag
+title: Flat Quilt
 layout: product
-image: pic04.jpg
+image: pic07.jpg
 ---
 
-A large messenger bag to carry all your stuff around. Made of thick and durable waterproof fabric, it includes a laptop pocket. The strap is reversible.
+A versatile quilt for a maxumal adaptability.
+
+This quilt has a zippered footbox. You can spread it flat like a blanket for more comfort. You can also close the footbox with the 50cm (20") zip for more warmth.
+
+Like the [closed model]({% site.url %}/products/closed.html), it can attach to your sleeping pad using the same straps and clips.
+
+The head cinches to keep the warmth inside using clips.
