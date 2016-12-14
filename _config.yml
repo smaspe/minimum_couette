@@ -3,7 +3,7 @@ description: Montreal Workshop for Outdoor Gear
 baseurl: '/minimum_couette'
 
 collections:
-  products:
+  projects:
     output: true
 
 paginate: 10
