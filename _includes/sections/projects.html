@@ -1,0 +1,19 @@
+{% for project in site.projects %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  {% if loopindex == 1 %}
+		<div class="row">
+	{% endif %}
+		<div class="6u">
+			<section class="box special">
+				<span class="image featured"><img src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="" /></span>
+				<h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
+				{{ project.excerpt }}
+				<ul class="actions">
+					<li><a href="{{ site.baseurl }}{{ project.url }}" class="button alt">Learn More</a></li>
+				</ul>
+			</section>
+		</div>
+	{% if loopindex != 1 %}
+    </div>
+  {% endif %}
+{% endfor %}

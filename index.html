@@ -1,58 +1,8 @@
 ---
 layout: default
 ---
-<section class="box special">
-	<header class="major">
-		<h2>{{ site.description }}</h2>
-		<p>Minimum Couette provides ultra light hiking gear so you can go even further!<br />
-		Carry less. Hike more!</p>
-	</header>
-	<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic01.jpg" alt="" /></span>
-</section>
+{% include sections/splash.html %}
 
-<section class="box special features">
-	<div class="features-row">
-		<section>
-			<span class="icon major fa-map-marker accent2"></span>
-			<h3>From MTL&hellip;</h3>
-			<p>Minimum Couette makes everything in Montreal. The fabric is sourced in Canada and in the USA. The duck down is sourced in Canada from ethical producers.</p>
-		</section>
-		<section>
-			<span class="icon major fa-heart accent3"></span>
-			<h3>With Love!</h3>
-			<p>All product are developed and tested with enthusiasts, cyclists, hikers, backpackers.</p>
-		</section>
-	</div>
-	<div class="features-row">
-		<section>
-			<span class="icon major fa-cloud accent4"></span>
-			<h3>Made Simple & Light&hellip;</h3>
-			<p>At Minimum Couette we believe hiking gear must be as light as possible, to help hiker go further.</p>
-		</section>
-		<section>
-			<span class="icon major fa-lock accent5"></span>
-			<h3>With Canadian Duck Down</h3>
-			<p>Our quilts are made with Canadian Duck Down, ethically processed by Hutterite communities in the West. The ducks are <i>never</i> live-plucked.</p>
-		</section>
-	</div>
-</section>
+{% include sections/features.html %}
 
-{% for product in site.products %}
-  {% assign loopindex = forloop.index | modulo: 2 %}
-  {% if loopindex == 1 %}
-		<div class="row">
-	{% endif %}
-		<div class="6u">
-			<section class="box special">
-				<span class="image featured"><img src="{{ site.baseurl }}/assets/images/{{ product.image }}" alt="" /></span>
-				<h3><a href="{{ site.baseurl }}{{ product.url }}">{{ product.title }}</a></h3>
-				{{ post.excerpt }}
-				<ul class="actions">
-					<li><a href="{{ site.baseurl }}{{ product.url }}" class="button alt">Learn More</a></li>
-				</ul>
-			</section>
-		</div>
-	{% if loopindex != 1 %}
-    </div>
-  {% endif %}
-{% endfor %}
+{% include sections/projects.html %}
