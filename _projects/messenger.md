@@ -1,6 +1,6 @@
 ---
 title: Messenger Bag
-layout: product
+layout: project
 image: pic04.jpg
 ---
 

@@ -1,0 +1,54 @@
+{
+  "closed": [
+    {
+      "name": "Weight",
+      "value": "480g"
+    },
+    {
+      "name": "Down weight",
+      "value": "300g"
+    },
+    {
+      "name": "Down fill power",
+      "value": "800 cu.in."
+    },
+    {
+      "name": "Temperature",
+      "value": "0C"
+    },
+    {
+      "name": "Liner fabric",
+      "value": "15D Membrane Polyester Taffeta"
+    },
+    {
+      "name": "Shell fabric",
+      "value": "20D HyperD Nylon Ripstop"
+    }
+  ],
+  "flat": [
+    {
+      "name": "Weight",
+      "value": "350g"
+    },
+    {
+      "name": "Down weight",
+      "value": "150g"
+    },
+    {
+      "name": "Down fill power",
+      "value": "800 cu.in."
+    },
+    {
+      "name": "Temperature",
+      "value": "10C"
+    },
+    {
+      "name": "Liner fabric",
+      "value": "15D Membrane Polyester Taffeta"
+    },
+    {
+      "name": "Shell fabric",
+      "value": "20D HyperD Nylon Ripstop"
+    }
+  ]
+}
