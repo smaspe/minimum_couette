@@ -1,1 +1,1 @@
-echo "web:  jekyll serve -P $PORT" > Procfile
+web:  jekyll serve -P $PORT
