@@ -10,3 +10,5 @@ paginate: 10
 
 gems: [jekyll-paginate]
 # TODO actually use paginate before I get to 10 articles
+
+exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor]
