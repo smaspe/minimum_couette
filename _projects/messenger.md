@@ -1,7 +1,7 @@
 ---
 title: Messenger Bag
 layout: project
-image: pic04.jpg
+image: gbaehydpgte-chris-hayashi_square.jpg
 ---
 
 A large messenger bag to carry _all_ your stuff around. It contains a lot, but fits perfectly on the back without hampering your movement.
