@@ -1,6 +1,6 @@
 name: Minimum Couette
 description: Montreal Workshop for Outdoor Gear
-baseurl: '/minimum_couette'
+baseurl: ''
 
 collections:
   projects:
