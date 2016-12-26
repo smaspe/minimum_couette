@@ -4,13 +4,12 @@
 		<div class="row">
 	{% endif %}
 		<div class="6u">
-			<section class="box special">
-				<span class="image featured"><img src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="" /></span>
-				<h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
-				{{ project.excerpt }}
-				<ul class="actions">
-					<li><a href="{{ site.baseurl }}{{ project.url }}" class="button alt">Learn More</a></li>
-				</ul>
+			<section class="box projects">
+				<img class="bgimage" src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="" />
+        <div class="desc">
+  				<h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
+  				{{ project.excerpt }}
+        </div>
 			</section>
 		</div>
 	{% if loopindex != 1 %}
