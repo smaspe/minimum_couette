@@ -937,13 +937,7 @@
 /* Header */
 
 	#skel-layers-wrapper {
-		padding-top: 3em;
-	}
-
-	body.landing {
-		#skel-layers-wrapper {
-			padding-top: 0;
-		}
+		padding-top: 0;
 	}
 
 	@include vendor-keyframes('reveal-header') {
@@ -1258,6 +1252,11 @@
 		}
 	}
 
+	body {
+		#main {
+			margin-top: -26em;
+		}
+	}
 	body.landing {
 		#main {
 			margin-top: -14em;
